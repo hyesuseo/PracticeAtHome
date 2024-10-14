@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class dto {
 	
-	private HashMap<Integer, Integer> account = new HashMap();
+	private HashMap<Integer, Integer> account;
 
 	public dto() { //생성자에서 초기화
 		this.account = new HashMap();

@@ -70,12 +70,12 @@ public class PtTest03 {
 	}
 	
 	
-	//String 프린트
+	//프린트 기능 : 오버로드 가능!
 	public void print (String a) {
 		System.out.println("입력한 값은 "+a+"입니다.");
 	}
 	
-	public void printint(int a) {
+	public void print(int a) {
 		System.out.println("절대값은 "+ a + "입니다.");
 	}
 	
