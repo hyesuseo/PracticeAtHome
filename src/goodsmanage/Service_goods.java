@@ -1,18 +1,21 @@
 package goodsmanage;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Service_goods {
 	Scanner sc = new Scanner(System.in);
-	Dto_goods dtto = new Dto_goods();
-	HashMap<String, Integer> minvent = dtto.getMainInventory();
-	HashMap<String, Integer> dinvent = dtto.getDsInventory();
-	HashMap<String, Integer> ginvent = dtto.getGalInventory();
+	private ArrayList<Dto_goods> list;
+	public Service_goods() {
+		list = new ArrayList<Dto_goods>();
+	}
+		Dto_goods dtto = new Dto_goods();
+	
 	
 	public void display() {
 		while(true) {
-		System.out.println("----CELINE 입출고 관리----");
+		System.out.println("----CL 입출고 관리----");
 		System.out.println("1. 본사 현황");
 		System.out.println("2. 입고 등록");
 		System.out.println("3. 매장 출고");
@@ -42,10 +45,10 @@ public class Service_goods {
 	
 	public void mainInvent() {
 		System.out.println("1. 본사재고 현황");
-		if(dtto.getMainInventory().isEmpty()) {
+		if(list.isEmpty()) {
 			System.out.println("먼저 재고등록이 필요합니다.");
 		}else {
-			System.out.println(dtto.getMainInventory());
+			System.out.println(());
 		}
 	}
 	
