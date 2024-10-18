@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class Service_goods {
 	Scanner sc = new Scanner(System.in);
 	private ArrayList<Dto_goods> list;
+
+	
 	public Service_goods() {
 		list = new ArrayList<Dto_goods>();
 	}
@@ -48,7 +50,7 @@ public class Service_goods {
 		if(list.isEmpty()) {
 			System.out.println("먼저 재고등록이 필요합니다.");
 		}else {
-			System.out.println(());
+			System.out.println((dtto.getItem() + dtto.getQuantity()));
 		}
 	}
 	
@@ -58,7 +60,7 @@ public class Service_goods {
 		String item = sc.next();
 		System.out.print("수량: ");
 		int quantt = sc.nextInt();
-		minvent.put(item.toUpperCase(), quantt);
+		list.;
 		dtto.setMainInventory(minvent);
 			
 	}
