@@ -1,4 +1,4 @@
-package bjquiz;
+package bjquiz;//2908번
 
 import java.util.Scanner;
 
@@ -18,6 +18,9 @@ public class quiz1019 {
 		for (int i =0; i<3; i++) {
 			a[i] = Character.toString(num1toS.charAt(i));
 			are[i] = a[2-i];
+		}
+		for (int i = 0; i<3; i++) {
+			
 		}
 		System.out.println(are[0]+are[1]+are[2]);
 		String [] b = new String [3];
